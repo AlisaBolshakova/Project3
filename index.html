@@ -1,0 +1,62 @@
+<html>
+	<head>
+	</head>
+
+	<body>
+		<div style="float:left; width:49%">
+		<fieldset>
+			<legend>Личная информация</legend>
+				<input type="text" placeholder="Фамилия" required>
+				<br><hr>
+				<input type="text" placeholder="Имя" required>
+				<br><hr>
+				<input type="text" placeholder="Отчество">
+				<br><hr>
+				<input type="email" placeholder="Электронная почта" required>
+				<br><hr>
+				<input type="text" placeholder="Пароль" required>
+				<br><hr>
+				<label>Дата рождения <input type="date"></label>
+				<br><hr>
+			<fieldset>
+				<legend>Пол</legend>
+					<input type="radio" name="choice">Мужской
+					<input type="radio" name="choice">Женский
+			</fieldset>
+		</fieldset>
+		<br><hr>
+		</div>
+		<div style="float:left; width:50%">
+			<fieldset>
+				<legend>Регистрационные сведения</legend>
+					<label>Программа обучения
+					<input type="text" list="listname">
+					<datalist id="listname">
+						<option value="Группа: FSJ">Fullstack-разработка на языке Java</option>
+						<option value="Группа: FSP "> Fullstack-разработка на языке Python</option>
+						<option value="Группа: FSJS"> Fullstack-разработка на языке JavaScript</option>
+					</datalist>
+					</label>
+				<br><hr>
+					<label>Форма обучения
+					<select>
+						<option>Очная</option>
+						<option>Очно-заочная</option>
+						<option>Заочная</option>
+					</select>
+					</label>
+				<br><hr>
+					<label>Аватар:
+						<input type="file">
+					</label>
+				<br><hr>
+					<textarea placeholder="Дополнительная информация" cols="50" rows="10"></textarea>
+			</fieldset>
+		</div>
+			<input type="checkbox">Даю согласие на обработку персональных данных
+			<hr>
+		<div style="clear:both">
+			<button type="button">Готово</button>
+		</div>
+	</body>
+</html>
